@@ -1,189 +1,177 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body */
-  body {
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-
-  
-  
-  /* Header / Navbar */
-  header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: inherit;
-  }  
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: background 0.3s;
-  }
-  
-  nav ul li a:hover {
-    background: #575757;
-    border-radius: 5px;
-  }
-  
-  .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  /* Main Content */
-  main {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 1em;
-    color: #555;
-  }
-
-  .no-scroll {
-    overflow: hidden;
-}
-  
-  /* Grid Style for Categories */
-  .category-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    padding: 20px;
-  }
-  
-  .card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-  
-  .card h3 {
-    margin: 10px 0;
-  }
-  
-  .card p {
-    color: #777;
-  }
-
-  .menu-toggle {
-    display: none; /* Ocultar por defecto */
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
 }
 
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+/* Header / Navbar */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}  
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #575757;
+  border-radius: 5px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  color: #555;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: #777;
+}
+.menu-toggle {
+  display: none; /* Ocultar por defecto */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
 .menu-toggle .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
 }
-
 /* Mostrar menú hamburguesa en pantallas pequeñas */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px; /* Ajustar según la altura del header */
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        text-align: center;
-        padding: 20px 0;
-        position: absolute;
-        opacity: 0;
-        transform: translateY(-20px);
-        transition: all 0.5s ease-in-out;
-    }
-
-    .nav-links li {
-        opacity: 0;
-        transform: translateY(10px);
-        transition: all 0.3s ease-in-out;
-    }
-
-    .nav-links.show li {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  .menu-toggle {
+      display: block;
+  }
+  .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px; /* Ajustar según la altura del header */
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+      padding: 20px 0;
+      position: absolute;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: all 0.5s ease-in-out;
+  }
+  .nav-links li {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease-in-out;
+  }
+  .nav-links.show li {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
-
 /* Animación del menú hamburguesa */
 .menu-toggle.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-    transition: all 0.3s ease-in-out;
+  transform: translateY(8px) rotate(45deg);
+  transition: all 0.3s ease-in-out;
 }
-
 .menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
-
 .menu-toggle.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
-
 /* Mostrar menú al hacer clic en el botón */
 .menu-toggle.active + .nav-links {
-    display: block;
+  display: block;
 }
-
 .nav-links.show {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.5s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
 }

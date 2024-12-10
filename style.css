@@ -96,7 +96,6 @@
     padding: 15px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    display: inline-block; /* Para que las tarjetas se alineen horizontalmente si es necesario */
   }
   
   .card:hover {
@@ -107,7 +106,6 @@
   .card img {
     width: 150px; /* Establecer un ancho fijo */
     height: 150px; /* Establecer una altura fija */
-    object-fit: cover; /* Asegura que la imagen se recorte correctamente sin deformarse */
     border-radius: 5px;
     margin: 0 auto 15px; /* Centrar la imagen y dejar margen solo abajo */
     display: block; /* Para asegurarse de que la imagen es un bloque y no se desborde */

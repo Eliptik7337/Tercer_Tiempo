@@ -102,10 +102,13 @@ p {
 }
 
 .card img {
-  max-width: 150px;
-  max-height: 150px;
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 150px; /* Limita la altura máxima */
   border-radius: 5px;
+  object-fit: cover; /* Ajusta cómo la imagen encaja en el contenedor */
 }
+
 
 .card h3 {
   margin: 10px 0;

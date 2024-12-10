@@ -107,9 +107,6 @@
     width: 150px; /* Establecer un ancho fijo */
     height: 150px; /* Establecer una altura fija */
     border-radius: 5px;
-    margin: 0 auto 15px; /* Centrar la imagen y dejar margen solo abajo */
-    display: block; /* Para asegurarse de que la imagen es un bloque y no se desborde */
-    box-sizing: border-box; /* Incluir el padding y el margen dentro del tamaño total */
   }
   
   .card h3 {
